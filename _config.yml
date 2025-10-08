@@ -6,25 +6,30 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yupeng Xie"
+title                    : "Yupeng Xie (谢宇鹏)"
 description              : "PhD Student at HKUST(GZ)"
 repository               : "xypkent/xypkent.github.io"
 google_scholar_stats_use_cdn : true
 
-# SEO Related
+# google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
+
+# SEO Related
+google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
+bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
+baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
 # Site Author
 author:
-  name             : "Yupeng Xie"
+  name             : "Yupeng Xie (谢宇鹏)"
   avatar           : "images/profile.png"
   bio              : "PhD Student"
   location         : "Guangzhou, China"
-  employer         : "Hong Kong University of Science and Technology (Guangzhou)"
+  employer         : "HKUST(GZ)"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Xt8HBrIAAAAJ"
   email            : "yxie740@connect.hkust-gz.edu.cn"
-  researchgate     :  
+  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -36,14 +41,14 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : 
+  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  dblp             : 
-  orcid            : 
+  linkedin         : # e.g., "linkedin username"
+  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
+  orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :
-  stackoverflow    : 
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
   twitter          : 
@@ -60,12 +65,15 @@ include:
   - _pages
   - files
 exclude:
+  - docs
+  - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
+  - .github
   - CHANGELOG
   - Capfile
   - Gemfile
@@ -108,7 +116,6 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
 
 # Defaults
 defaults:
@@ -154,4 +161,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
