@@ -28,7 +28,7 @@ My research aims to make data visualization more intelligent and accessible, ena
 
 Yuchen Chen, Yuanyi Wu, Shuqi Shen, **Yupeng Xie**, Lixia Shen, Haotian Xiong, Yuyu Luo
 
-*IEEE Visualization and Visual Analytics (VIS)*, 2025
+*IEEE Visualization and Visual Analytics (VIS) Short Paper*, 2025
 
 [**Project**](https://chartmark.github.io/)
 - ChartMark is a high-level grammar for chart annotation with declarative JSON syntax.
