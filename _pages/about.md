@@ -70,7 +70,8 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 - *2023.06* Academic Excellence Award
 
 # 📖 Educations
-- *2022.09 - now*, PhD, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China.
+- *2025.03 - now*, PhD in Computer Science and Technology, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China.
+- *2021.09 - 2024.06*, Master in Artificial Intelligence, Qinghai University, Xining, China.
 
 # 💬 Invited Talks
 - *2024.08*, Presentation at VLDB 2024 Conference.
