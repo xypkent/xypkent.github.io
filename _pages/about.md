@@ -79,8 +79,3 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 
 # 💬 Invited Talks
 - *2024.08*, Presentation at VLDB 2024 Conference.
-
-# 💻 Research Interests
-- **Data Visualization**: Intelligent and automated visualization generation
-- **Human-Computer Interaction**: AI-assisted data analysis tools
-- **Natural Language Processing**: Text-to-visualization and natural language interfaces
