@@ -72,8 +72,6 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 - Second Prize at National Level, First Prize at Provincial Level in **Lanqiao Cup National Programming Contest**
 - Second Prize in **National College Students' Mobile Internet Application Development Innovation Competition**
 - Second Prize at National Level, Grand Prize at Provincial Level in **National E-Business Innovation Competition**
-- Third Prize in **Guangdong Provincial College Students' Computer Design Competition**
-- Third Prize in **"CITIC Cup" IoT Competition** in Guangdong Province
 
 # 📖 Educations
 - *2025.03 - now*, PhD in Computer Science and Technology, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China.
