@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google-site-verification" content="google-site-verification=..." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  
+  {% if site.google_analytics_id %}
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.google_analytics_id }}');
+  </script>
+  {% endif %}
+</head>
+
+<body>
+  <div class="wrapper">
+    {% include sidebar.html %}
+
+    <section class="page-content">
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
+  </div>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  
+  <!-- Google Scholar Citations -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json')
+        .then(response => response.json())
+        .then(data => {
+          const citationElements = document.querySelectorAll('.show_paper_citations');
+          citationElements.forEach(element => {
+            const paperId = element.getAttribute('data');
+            const citations = data.publications[paperId];
+            if (citations) {
+              element.textContent = `Citations: ${citations}`;
+            }
+          });
+        })
+        .catch(error => console.log('Error loading citation data:', error));
+    });
+  </script>
+</body>
+
+</html>
+
