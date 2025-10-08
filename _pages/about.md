@@ -39,13 +39,13 @@ My research aims to make data visualization more intelligent and accessible, ena
 
 *Proceedings of the VLDB Endowment 17 (11), 3178–3191, 2024*
 
-<strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/HKUSTDial/HAIChart) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - HAIChart is a novel human-AI paired visualization system that combines the strengths of human expertise and AI capabilities.
 - The system enables interactive and collaborative data visualization creation between humans and AI.
 </div>
 </div>
 
-- [ChartMark: A Structured Grammar for Chart Annotation](https://), Yuchen Chen, Yuanyi Wu, Shuqi Shen, **Yupeng Xie**, Lixia Shen, Haotian Xiong, Yuyu Luo. **IEEE Visualization and Visual Analytics (VIS)**, 2025.
+- [ChartMark: A Structured Grammar for Chart Annotation](https://chartmark.github.io/), Yuchen Chen, Yuanyi Wu, Shuqi Shen, **Yupeng Xie**, Lixia Shen, Haotian Xiong, Yuyu Luo. **IEEE Visualization and Visual Analytics (VIS)**, 2025.
 
 - [Intelligent Data Visualization Analysis Techniques: A Survey](https://www.jos.org.cn/), Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li. **Journal of Software**, 2023, 35(1): 356-404.
 
