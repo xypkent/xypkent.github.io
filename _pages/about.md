@@ -43,7 +43,20 @@ My research aims to make data visualization more intelligent and accessible, ena
 </div>
 </div>
 
-- [ChartMark: A Structured Grammar for Chart Annotation](https://chartmark.github.io/), Yuchen Chen, Yuanyi Wu, Shuqi Shen, **Yupeng Xie**, Lixia Shen, Haotian Xiong, Yuyu Luo. **IEEE Visualization and Visual Analytics (VIS)**, 2025.
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2025</div><img src='images/chartmark.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ChartMark: A Structured Grammar for Chart Annotation](https://chartmark.github.io/)
+
+Yuchen Chen, Yuanyi Wu, Shuqi Shen, **Yupeng Xie**, Lixia Shen, Haotian Xiong, Yuyu Luo
+
+*IEEE Visualization and Visual Analytics (VIS)*, 2025
+
+[**Project**](https://chartmark.github.io/)
+- ChartMark is a high-level grammar for chart annotation with declarative JSON syntax.
+- Provides automatic positioning and supports multiple annotation techniques.
+</div>
+</div>
 
 - [Intelligent Data Visualization Analysis Techniques: A Survey](https://www.jos.org.cn/), Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li. **Journal of Software**, 2023, 35(1): 356-404.
 
