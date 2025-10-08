@@ -28,7 +28,7 @@ My research aims to make data visualization more intelligent and accessible, ena
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2024</div><img src='images/haichart.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [HAIChart: Human and AI Paired Visualization System](https://www.vldb.org/pvldb/vol17/p3178-xie.pdf)
