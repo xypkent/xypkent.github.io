@@ -78,10 +78,7 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 - *2021.09 - 2024.06*, Master in Artificial Intelligence, Qinghai University, Xining, China.
 
 # 💼 Experience
-- *2025.06 - now*, Exchange Student, Tsinghua University, Beijing, China.
-- *2023.09 - 2025.03*, Visiting Student, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China. Supervised by Assistant Professor Yuyu Luo.
-- *2022.08 - 2023.09*, Visiting Student, Tsinghua University, Beijing, China. Supervised by Professor Guoliang Li.
-- *2022.07 - 2022.09*, Research Intern, Huawei Central Research Institute, Shenzhen, China.
+- *2023.09 - 2025.02*, Visiting Student, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China. Supervised by Assistant Professor Yuyu Luo.
 - *2018.09 - 2020.05*, Java Developer, Guangdong Xingfu Century Group, Guangzhou, China.
 
 # 💬 Invited Talks
