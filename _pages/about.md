@@ -21,21 +21,6 @@ My research aims to make data visualization more intelligent and accessible, ena
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2024</div><img src='images/haichart.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[HAIChart: Human and AI Paired Visualization System](https://www.vldb.org/pvldb/vol17/p3178-xie.pdf)
-
-**Yupeng Xie**, Yuyu Luo, Guoliang Li, Nan Tang
-
-*Proceedings of the VLDB Endowment 17 (11), 3178–3191, 2024*
-
-[**Project**](https://github.com/HKUSTDial/HAIChart)
-- HAIChart is a novel human-AI paired visualization system that combines the strengths of human expertise and AI capabilities.
-- The system enables interactive and collaborative data visualization creation between humans and AI.
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2025</div><img src='images/chartmark.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -51,7 +36,34 @@ Yuchen Chen, Yuanyi Wu, Shuqi Shen, **Yupeng Xie**, Lixia Shen, Haotian Xiong, Y
 </div>
 </div>
 
-- [Intelligent Data Visualization Analysis Techniques: A Survey](https://www.jos.org.cn/), Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li. **Journal of Software**, 2023, 35(1): 356-404.
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2024</div><img src='images/haichart.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[HAIChart: Human and AI Paired Visualization System](https://www.vldb.org/pvldb/vol17/p3178-xie.pdf)
+
+**Yupeng Xie**, Yuyu Luo, Guoliang Li, Nan Tang
+
+*Proceedings of the VLDB Endowment 17 (11), 3178–3191, 2024*
+
+[**Project**](https://github.com/HKUSTDial/HAIChart)
+- HAIChart is a novel human-AI paired visualization system that combines the strengths of human expertise and AI capabilities.
+- The system enables interactive and collaborative data visualization creation between humans and AI.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Software 2023</div><img src='images/vis_survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Intelligent Data Visualization Analysis Techniques: A Survey](https://www.jos.org.cn/)
+
+Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
+
+*Journal of Software*, 2023, 35(1): 356-404
+
+- A comprehensive survey on intelligent data visualization analysis techniques.
+- Covers data preparation, visualization generation, and analysis recommendation methods.
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - *2024.10* Outstanding Student Award
