@@ -80,6 +80,3 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 # 💼 Experience
 - *2023.09 - 2025.02*, Visiting Student, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China. Supervised by Assistant Professor Yuyu Luo.
 - *2018.09 - 2020.05*, Java Developer, Guangdong Xingfu Century Group, Guangzhou, China.
-
-# 💬 Invited Talks
-- *2024.08*, Presentation at VLDB 2024 Conference.
