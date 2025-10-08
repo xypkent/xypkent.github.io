@@ -66,10 +66,10 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 </div>
 
 # 🎖 Honors and Awards
-- **Best Poster Award - First Prize**, Greater Bay Area Seven Universities Joint Graduate Academic Poster Competition, 2024
-- **National Scholarship** (国家奖学金)
+- **First Place**, Greater Bay Area Seven Universities Joint Graduate Academic Poster Competition, 2024
+- **National Scholarship** (Top 2%)
 - **China Telecom Scholarship · Fly Young Award** (Top 1%)
-- **National Encouragement Scholarship** (国家励志奖学金)
+- **National Encouragement Scholarship** (Top 30%)
 - Second Prize at National Level, First Prize at Provincial Level in **Lanqiao Cup National Programming Contest**
 - Second Prize in **National College Students' Mobile Internet Application Development Innovation Competition**
 - Second Prize at National Level, Grand Prize at Provincial Level in **National E-Business Innovation Competition**
