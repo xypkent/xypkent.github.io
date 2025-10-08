@@ -25,7 +25,7 @@ My research aims to make data visualization more intelligent and accessible, ena
 
 
 # 🔥 News
-- *2024.10*: &nbsp;🎉🎉 Our paper "ChartMark" has been accepted by IEEE VIS 2025!
+- *2025.06*: &nbsp;🎉🎉 Our paper "ChartMark" has been accepted by IEEE VIS 2025!
 - *2024.06*: &nbsp;🎉🎉 Our paper "HAIChart" has been accepted by VLDB 2024!
 
 # 📝 Publications 
