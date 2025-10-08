@@ -66,8 +66,14 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 </div>
 
 # 🎖 Honors and Awards
-- *2024.10* Outstanding Student Award
-- *2023.06* Academic Excellence Award
+- **National Scholarship** (国家奖学金)
+- **China Telecom Scholarship · Fly Young Award** (Top 1%)
+- **National Encouragement Scholarship** (国家励志奖学金)
+- Second Prize at National Level, First Prize at Provincial Level in **Lanqiao Cup National Programming Contest**
+- Second Prize in **National College Students' Mobile Internet Application Development Innovation Competition**
+- Second Prize at National Level, Grand Prize at Provincial Level in **National E-Business Innovation Competition**
+- Third Prize in **Guangdong Provincial College Students' Computer Design Competition**
+- Third Prize in **"CITIC Cup" IoT Competition** in Guangdong Province
 
 # 📖 Educations
 - *2025.03 - now*, PhD in Computer Science and Technology, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China.
