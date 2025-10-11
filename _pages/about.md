@@ -66,7 +66,7 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 </div>
 
 # 🎖 Honors and Awards
-- **First Place**, Greater Bay Area Seven Universities Joint Graduate Academic Poster Competition, 2024
+- **First Place**, Greater Bay Area Seven Universities Joint Graduate Academic Poster Competition, 2025
 - **National Scholarship** (Top 2%)
 - **China Telecom Scholarship · Fly Young Award** (Top 1%)
 - **National Encouragement Scholarship** (Top 30%)
