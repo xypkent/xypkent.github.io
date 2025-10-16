@@ -75,7 +75,7 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 - Second Prize at National Level, Grand Prize at Provincial Level in **National E-Business Innovation Competition**
 
 # 📖 Educations
-- *2025.03 - now*, PhD in Computer Science and Technology, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China.
+- *2025.03 - now*, PhD in Data Science and Analytics, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China.
 - *2021.09 - 2024.06*, Master in Artificial Intelligence, Qinghai University, Xining, China.
 
 # 💼 Experience
