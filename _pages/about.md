@@ -39,7 +39,7 @@ Yiyu Chen, Yifan Wu, Shuyu Shen, **Yupeng Xie**, Leixian Shen, Hui Xiong, Yuyu L
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2024</div><img src='images/haichart.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[HAIChart: Human and AI Paired Visualization System](https://www.vldb.org/pvldb/vol17/p3178-xie.pdf)
+[HAIChart: Human and AI Paired Visualization System](https://www.vldb.org/pvldb/vol17/p3178-luo.pdf)
 
 **Yupeng Xie**, Yuyu Luo, Guoliang Li, Nan Tang
 
