@@ -81,3 +81,9 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 # 💼 Experience
 - *2023.09 - 2025.02*, Visiting Student, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China. Supervised by Assistant Professor Yuyu Luo.
 - *2018.09 - 2020.05*, Java Developer, Guangdong Xingfu Century Group, Guangzhou, China.
+
+---
+
+<p style="text-align: center; font-size: 0.9em; color: #666;">
+This website is based on the <a href="https://github.com/RayeRen/acad-homepage.github.io">AcadHomepage</a> template.
+</p>
