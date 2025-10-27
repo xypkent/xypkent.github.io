@@ -51,14 +51,14 @@ Yiyu Chen, Yifan Wu, Shuyu Shen, **Yupeng Xie**, Leixian Shen, Hui Xiong, Yuyu L
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Software 2023</div><img src='images/vis_survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Software 2024</div><img src='images/vis_survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Intelligent Data Visualization Analysis Techniques: A Survey](https://www.jos.org.cn/)
+[Intelligent Data Visualization Analysis Techniques: A Survey](https://www.jos.org.cn/jos/article/abstract/6911)
 
 Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 
-*Journal of Software*, 2023, 35(1): 356-404
+*Journal of Software*, 2024, 35(1): 356-404
 
 - A comprehensive survey on intelligent data visualization analysis techniques.
 - Covers data preparation, visualization generation, and analysis recommendation methods.
