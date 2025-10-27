@@ -26,7 +26,7 @@ My research aims to make data visualization more intelligent and accessible, ena
 
 [ChartMark: A Structured Grammar for Chart Annotation](https://chartmark.github.io/)
 
-Yuchen Chen, Yuanyi Wu, Shuqi Shen, **Yupeng Xie**, Lixia Shen, Haotian Xiong, Yuyu Luo
+Yiyu Chen, Yifan Wu, Shuyu Shen, **Yupeng Xie**, Leixian Shen, Hui Xiong, Yuyu Luo
 
 *IEEE Visualization and Visual Analytics (VIS) Short Paper*, 2025
 
