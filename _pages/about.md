@@ -21,6 +21,20 @@ My research aims to make data visualization more intelligent and accessible, ena
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/visjudgebench.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[VisJudge-Bench: Aesthetics and Quality Assessment of Visualizations](https://github.com/HKUSTDial/VisJudgeBench)
+
+**Yupeng Xie**, Zhiyang Zhang, Yifan Wu, Sirong Lu, Jiayi Zhang, Zhaoyang Yu, Jinlin Wang, Sirui Hong, Bang Liu, Chenglin Wu, Yuyu Luo
+
+[**Project**](https://github.com/HKUSTDial/VisJudgeBench)
+- VisJudge-Bench is the first comprehensive benchmark for evaluating MLLMs' performance in assessing visualization aesthetics and quality.
+- Contains 3,090 expert-annotated samples covering single visualizations, multiple visualizations, and dashboards across 32 chart types.
+- We propose VisJudge, a model that significantly narrows the gap with human judgment compared to GPT-5.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2025</div><img src='images/chartmark.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
