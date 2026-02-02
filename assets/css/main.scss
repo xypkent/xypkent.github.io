@@ -55,6 +55,9 @@
         display: flex;
         width: 100%;
         order: 2;
+        a {
+            cursor: pointer;
+        }
         img {
             max-width: 400px;
             box-shadow: 3px 3px 6px #888;

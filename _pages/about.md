@@ -20,9 +20,9 @@ My research aims to develop intelligent systems that can autonomously interact w
 - *2025.06*: &nbsp;🎉🎉 Our paper "ChartMark" has been accepted by IEEE VIS 2025!
 - *2024.06*: &nbsp;🎉🎉 Our paper "HAIChart" has been accepted by VLDB 2024!
 
-# 📝 Publications 
+# 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/visjudgebench.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><a href="/images/abstract.png"><img src='images/abstract.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [VisJudge-Bench: Aesthetics and Quality Assessment of Visualizations](https://github.com/HKUSTDial/VisJudgeBench)
@@ -38,7 +38,7 @@ My research aims to develop intelligent systems that can autonomously interact w
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2025</div><img src='images/chartmark.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2025</div><a href="/images/chartmark.png"><img src='images/chartmark.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [ChartMark: A Structured Grammar for Chart Annotation](https://chartmark.github.io/)
@@ -53,7 +53,7 @@ Yiyu Chen, Yifan Wu, Shuyu Shen, **Yupeng Xie**, Leixian Shen, Hui Xiong, Yuyu L
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2024</div><img src='images/haichart.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2024</div><a href="/images/haichart.png"><img src='images/haichart.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [HAIChart: Human and AI Paired Visualization System](https://www.vldb.org/pvldb/vol17/p3178-luo.pdf)
@@ -68,14 +68,31 @@ Yiyu Chen, Yifan Wu, Shuyu Shen, **Yupeng Xie**, Leixian Shen, Hui Xiong, Yuyu L
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Software 2024</div><img src='images/vis_survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Software 2024</div><a href="/images/navi_overview.png"><img src='images/navi_overview.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Navi: A Natural Language-powered Data Analytics System](https://www.jos.org.cn/jos/article/abstract/7074?st=alljournals)
+
+**Yupeng Xie**, Yuyu Luo, Jianhua Feng
+
+*Journal of Software*, 2024, 35(3)  
+🏆 *《软件学报》2024年高被关注研究论文*
+
+- Navi is a natural language-powered data analytics system with modular design: data querying, visualization generation, and visualization exploration.
+- Uses natural language as a unified interface and a task scheduler for effective module collaboration.
+- Proposes Monte Carlo Tree Search-based automated visualization exploration with domain-knowledge pruning and composite reward functions.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Journal of Software 2024</div><a href="/images/vis_survey.png"><img src='images/vis_survey.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Intelligent Data Visualization Analysis Techniques: A Survey](https://www.jos.org.cn/jos/article/abstract/6911)
 
 Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 
-*Journal of Software*, 2024, 35(1): 356-404
+*Journal of Software*, 2024, 35(1): 356-404  
+🏆 *《软件学报》2024年高被关注综述论文*
 
 - A comprehensive survey on intelligent data visualization analysis techniques.
 - Covers data preparation, visualization generation, and analysis recommendation methods.
