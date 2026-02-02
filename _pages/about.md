@@ -10,23 +10,26 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD student at the <a href="https://www.hkust-gz.edu.cn/">Hong Kong University of Science and Technology (Guangzhou)</a>, supervised by Professor <a href="https://luoyuyu.vip/">Yuyu Luo</a>. My current research interest focuses on **intelligent data visualization**.
+I am a PhD student at the <a href="https://www.hkust-gz.edu.cn/">Hong Kong University of Science and Technology (Guangzhou)</a>, supervised by Professor <a href="https://luoyuyu.vip/">Yuyu Luo</a>. My current research interests focus on **data agents** and **intelligent data visualization**.
 
-My research aims to make data visualization more intelligent and accessible, enabling both experts and non-experts to effectively explore and understand complex data through advanced visualization techniques.
+My research aims to develop intelligent systems that can autonomously interact with data and create effective visualizations, enabling both experts and non-experts to effectively explore and understand complex data through advanced AI-powered techniques.
 
 
 # 🔥 News
+- *2026.01*: &nbsp;🎉🎉 Our paper "VisJudge-Bench" has been accepted by ICLR 2026!
 - *2025.06*: &nbsp;🎉🎉 Our paper "ChartMark" has been accepted by IEEE VIS 2025!
 - *2024.06*: &nbsp;🎉🎉 Our paper "HAIChart" has been accepted by VLDB 2024!
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/visjudgebench.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/visjudgebench.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [VisJudge-Bench: Aesthetics and Quality Assessment of Visualizations](https://github.com/HKUSTDial/VisJudgeBench)
 
 **Yupeng Xie**, Zhiyang Zhang, Yifan Wu, Sirong Lu, Jiayi Zhang, Zhaoyang Yu, Jinlin Wang, Sirui Hong, Bang Liu, Chenglin Wu, Yuyu Luo
+
+*International Conference on Learning Representations (ICLR)*, 2026
 
 [**Project**](https://github.com/HKUSTDial/VisJudgeBench)
 - VisJudge-Bench is the first comprehensive benchmark for evaluating MLLMs' performance in assessing visualization aesthetics and quality.
