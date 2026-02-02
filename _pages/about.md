@@ -31,7 +31,7 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 *International Conference on Learning Representations (ICLR)*, 2026
 
-[**Project**](https://github.com/HKUSTDial/VisJudgeBench)
+[**GitHub**](https://github.com/HKUSTDial/VisJudgeBench)
 - VisJudge-Bench is the first comprehensive benchmark for evaluating MLLMs' performance in assessing visualization aesthetics and quality.
 - Contains 3,090 expert-annotated samples covering single visualizations, multiple visualizations, and dashboards across 32 chart types.
 - We propose VisJudge, a model that significantly narrows the gap with human judgment compared to GPT-5.
@@ -62,7 +62,7 @@ Yiyu Chen, Yifan Wu, Shuyu Shen, **Yupeng Xie**, Leixian Shen, Hui Xiong, Yuyu L
 
 *Proceedings of the VLDB Endowment 17 (11), 3178–3191, 2024*
 
-[**Project**](https://github.com/HKUSTDial/HAIChart)
+[**GitHub**](https://github.com/HKUSTDial/HAIChart)
 - HAIChart is a novel human-AI paired visualization system that combines the strengths of human expertise and AI capabilities.
 - The system enables interactive and collaborative data visualization creation between humans and AI.
 </div>
