@@ -38,9 +38,9 @@
     html {
       scroll-behavior: smooth;
       scroll-snap-type: y mandatory;
-      height: 100%;
-      overflow-y: scroll;
-      overflow-x: hidden;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
     }
 
     body {
@@ -49,8 +49,12 @@
       font-family: var(--font-body);
       line-height: 1.6;
       overflow-x: hidden;
-      height: 100%;
+      overflow-y: auto;
+      height: 100vh;
+      width: 100vw;
+      scrollbar-width: none;
     }
+    body::-webkit-scrollbar { display: none; }
 
     a { color: inherit; text-decoration: none; }
 
@@ -296,18 +300,19 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      gap: 12px;
+      gap: 8px;
       margin-bottom: 32px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     .spine-item {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 10px 18px;
-      font-size: 0.9rem;
+      padding: 7px 12px;
+      font-size: 0.82rem;
       font-weight: 600;
+      white-space: nowrap;
     }
 
     .spine-divider {
@@ -372,33 +377,34 @@
     }
 
     .section-inner {
-      max-width: 1100px;
+      max-width: 1500px;
       width: 100%;
       margin: 0 auto;
+      padding: 0 40px;
     }
 
     .section-label {
-      font-size: 0.8rem;
+      font-size: 1.1rem;
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--blue);
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
 
     .section-title {
       font-family: var(--font-display);
-      font-size: clamp(1.8rem, 3.8vw, 3rem);
+      font-size: clamp(2.8rem, 5vw, 4.5rem);
       font-weight: 700;
       line-height: 1.15;
       letter-spacing: -0.015em;
-      margin-bottom: 14px;
+      margin-bottom: 20px;
     }
 
     .section-sub {
-      font-size: 1rem;
+      font-size: 1.35rem;
       color: var(--text-muted);
-      max-width: 640px;
+      max-width: 900px;
       margin-bottom: 40px;
       line-height: 1.7;
     }
@@ -535,8 +541,8 @@
 
     .output-body {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 56px;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 48px;
       align-items: center;
     }
 
@@ -617,11 +623,11 @@
 
     .output-title {
       font-family: var(--font-display);
-      font-size: clamp(2.4rem, 4vw, 3.6rem);
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
       font-weight: 800;
       line-height: 1.1;
       letter-spacing: -0.03em;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
     .output-icon {
@@ -630,10 +636,10 @@
     }
 
     .output-tagline {
-      font-size: 1rem;
+      font-size: 1.15rem;
       color: var(--text-muted);
       line-height: 1.7;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
     }
 
     .output-list {
@@ -647,9 +653,9 @@
     .output-list li {
       display: flex;
       align-items: flex-start;
-      gap: 12px;
-      font-size: 0.95rem;
-      line-height: 1.6;
+      gap: 14px;
+      font-size: 1.15rem;
+      line-height: 1.7;
       color: var(--text-muted);
     }
 
@@ -675,7 +681,7 @@
     }
 
     .otag {
-      font-size: 0.8rem;
+      font-size: 0.95rem;
       font-weight: 600;
       padding: 6px 14px;
       border-radius: 20px;
@@ -684,6 +690,108 @@
     .otag.blue { border-color: rgba(59,130,246,0.4); color: var(--blue-light); background: rgba(59,130,246,0.08); }
     .otag.green { border-color: rgba(34,197,94,0.4); color: var(--green-light); background: rgba(34,197,94,0.08); }
     .otag.purple { border-color: rgba(168,85,247,0.4); color: var(--purple-light); background: rgba(168,85,247,0.08); }
+
+    /* =====================
+       NEW OUTPUT SECTIONS (上标题+下左右)
+    ===================== */
+    .output-section-new {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      min-height: 100dvh;
+      scroll-snap-align: start;
+      box-sizing: border-box;
+      padding: 64px 80px;
+      background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-card) 100%) !important;
+    }
+
+    #output1, #output2, #output3 {
+      background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-card) 100%) !important;
+    }
+
+    .output-header-new {
+      margin-bottom: 48px;
+    }
+
+    .output-title-new {
+      font-family: var(--font-display);
+      font-size: clamp(3.2rem, 6vw, 4.8rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+
+    .output-body-new {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 48px;
+      align-items: flex-start;
+    }
+
+    .output-left-new {
+      position: relative;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      overflow: hidden;
+      cursor: pointer;
+      max-height: calc(100dvh - 320px);
+    }
+
+    .output-left-new img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      opacity: 0.95;
+      transition: transform 0.4s var(--ease-expo), opacity 0.3s;
+    }
+
+    .output-left-new:hover img {
+      transform: scale(1.02);
+      opacity: 1;
+    }
+
+    .output-right-new {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      padding-top: 16px;
+    }
+
+    .output-tagline-new {
+      font-size: 1.5rem;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.9;
+      margin-bottom: 8px;
+    }
+
+    .output-list-new {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .output-list-new li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8;
+      color: var(--text);
+    }
+
+    .output-tags-new {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
 
     /* =====================
        WORKFLOW SECTION
@@ -696,9 +804,9 @@
 
     .workflow-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
+      grid-template-columns: 1.5fr 0.85fr;
+      gap: 48px;
+      align-items: flex-start;
     }
 
     .dag-diagram {
@@ -770,15 +878,17 @@
     }
 
     .step-title {
-      font-size: 0.9rem;
+      font-size: 1.4rem;
       font-weight: 700;
-      margin-bottom: 3px;
+      margin-bottom: 8px;
+      color: var(--text);
     }
 
     .step-desc {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.5;
+      font-size: 1.15rem;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.7;
     }
 
     /* =====================
@@ -858,7 +968,7 @@
     .inv3 .inv-icon { background: rgba(168,85,247,0.15); }
 
     .inv-num {
-      font-size: 0.75rem;
+      font-size: 0.9rem;
       font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -871,14 +981,14 @@
 
     .inv-title {
       font-family: var(--font-display);
-      font-size: 1.05rem;
+      font-size: 1.45rem;
       font-weight: 700;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       line-height: 1.3;
     }
 
     .inv-desc {
-      font-size: 0.85rem;
+      font-size: 1.15rem;
       color: var(--text-muted);
       line-height: 1.6;
       margin-bottom: 14px;
@@ -891,9 +1001,9 @@
     }
 
     .inv-tag {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       font-weight: 600;
-      padding: 4px 10px;
+      padding: 5px 12px;
       border-radius: 6px;
     }
 
@@ -933,13 +1043,13 @@
     }
 
     .feature-title {
-      font-size: 1.05rem;
+      font-size: 1.35rem;
       font-weight: 700;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     .feature-desc {
-      font-size: 0.95rem;
+      font-size: 1.2rem;
       color: var(--text-muted);
       line-height: 1.6;
     }
@@ -1016,15 +1126,18 @@
     }
 
     .rec-icon-img {
-      width: 64px;
-      height: 64px;
+      width: 100%;
+      height: auto;
+      max-width: 320px;
       object-fit: contain;
       display: block;
-      margin: 0 auto 12px;
+      margin: 0 auto 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .rec-label {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -1034,14 +1147,14 @@
 
     .rec-title {
       font-family: var(--font-display);
-      font-size: 1.15rem;
+      font-size: 1.5rem;
       font-weight: 700;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       line-height: 1.3;
     }
 
     .rec-sub {
-      font-size: 0.875rem;
+      font-size: 1.15rem;
       color: var(--text-muted);
     }
 
@@ -1083,20 +1196,20 @@
     }
 
     .paper-title {
-      font-size: 1.4rem;
+      font-size: 2rem;
       font-weight: 800;
       line-height: 1.35;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
 
     .paper-authors {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       color: var(--text-muted);
       margin-bottom: 8px;
     }
 
     .paper-venue {
-      font-size: 0.875rem;
+      font-size: 1rem;
       color: var(--blue-light);
       font-weight: 600;
     }
@@ -1177,7 +1290,7 @@
 
     @media (max-width: 600px) {
       .features-grid { grid-template-columns: 1fr; }
-      .hero-spine { flex-direction: column; gap: 8px; }
+      .hero-spine { flex-direction: column; gap: 8px; flex-wrap: wrap; }
     }
 
     /* =====================
@@ -1329,13 +1442,7 @@
       DeepEye is the first data agent that connects all your data sources,
       plans the entire analysis, and delivers professional results — automatically.
     </p>
-    <div class="hero-spine">
-      <div class="spine-item">&#x1F4AC; One Question</div>
-      <div class="spine-divider">&#8594;</div>
-      <div class="spine-item">&#x26A1; Automated Workflow</div>
-      <div class="spine-divider">&#8594;</div>
-      <div class="spine-item">&#x1F3AF; Three Outputs</div>
-    </div>
+
     <div class="hero-ctas">
       <a href="#overview" class="btn-primary">Watch the Demo</a>
       <a href="#innovations" class="btn-outline">Explore the Inventions</a>
@@ -1363,7 +1470,7 @@
         </div>
         <div class="inv-tag" style="background:rgba(59,130,246,0.15);color:var(--blue-light);">Market Scale · Gartner, Sep 2025</div>
         <h3 class="inv-title">Worldwide AI Spending Will Total <span style="color:var(--blue-light);">$1.5 Trillion</span> in 2025</h3>
-        <p class="inv-desc">AI Application Software alone is forecast to grow from $83B in 2024 to $270B by 2026 — a 3× expansion in just two years. The market for intelligent data analysis tools is entering hypergrowth.</p>
+        <p class="inv-desc">AI Application Software is forecast to grow from $83B to $270B by 2026 — a 3× expansion. The intelligent data analysis market is entering hypergrowth.</p>
         <a href="https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;color:var(--blue-light);text-decoration:none;">Read the full report ↗</a>
       </div>
 
@@ -1374,7 +1481,7 @@
         </div>
         <div class="inv-tag" style="background:rgba(168,85,247,0.15);color:#c084fc;">Regulatory Mandate · EU AI Act</div>
         <h3 class="inv-title">High-Risk AI Must Be <span style="color:#c084fc;">Transparent & Auditable</span> by Law</h3>
-        <p class="inv-desc">The EU AI Act (Article 13) legally mandates that AI systems must be “sufficiently transparent to enable deployers to interpret a system’s output.” Black-box AI is no longer compliant — DeepEye’s workflow engine is built for exactly this requirement.</p>
+        <p class="inv-desc">Article 13 mandates AI systems be "sufficiently transparent." Black-box AI is no longer compliant — DeepEye's workflow engine meets this requirement.</p>
         <a href="https://artificialintelligenceact.eu/article/13/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;color:#c084fc;text-decoration:none;">Read Article 13 ↗</a>
       </div>
 
@@ -1385,7 +1492,7 @@
         </div>
         <div class="inv-tag" style="background:rgba(34,197,94,0.15);color:var(--green);">Industry Pain Point · HBR, Sep 2025</div>
         <h3 class="inv-title">AI Is <span style="color:var(--green);">Reinforcing Data Silos</span> — Not Breaking Them</h3>
-        <p class="inv-desc">HBR warns that current AI tools are making the data silo problem worse: each department deploys its own AI, creating new walls instead of bridges. DeepEye’s unified multimodal orchestration directly addresses this enterprise-wide challenge.</p>
+        <p class="inv-desc">Current AI tools worsen data silos: each department deploys its own AI. DeepEye's unified orchestration breaks down these walls enterprise-wide.</p>
         <a href="https://hbr.org/2025/09/dont-let-ai-reinforce-organizational-silos" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;color:var(--green);text-decoration:none;">Read the article ↗</a>
       </div>
 
@@ -1409,7 +1516,7 @@
         </div>
         <div class="inv-tag" style="background:rgba(59,130,246,0.15);color:var(--blue-light);">Challenge 1</div>
         <h3 class="inv-title">The Heterogeneity Gap</h3>
-        <p class="inv-desc">SQL tools query databases. RAG tools search documents. Spreadsheet tools crunch numbers. But no single tool can orchestrate all three — forcing analysts to manually bridge the gaps themselves.</p>
+        <p class="inv-desc">SQL, RAG, and spreadsheet tools exist separately. No single tool orchestrates all three — analysts must manually bridge the gaps.</p>
       </div>
 
       <div class="inv-card reveal reveal-delay-2">
@@ -1418,7 +1525,7 @@
         </div>
         <div class="inv-tag" style="background:rgba(168,85,247,0.15);color:var(--purple-light);">Challenge 2</div>
         <h3 class="inv-title">The Context Explosion</h3>
-        <p class="inv-desc">Single-agent systems stuff every tool description, intermediate result, and constraint into one context window. As complexity grows, the model starts hallucinating, forgetting constraints, and producing unreliable answers.</p>
+        <p class="inv-desc">Single-agent systems overload one context window. As complexity grows, models hallucinate and forget constraints, producing unreliable results.</p>
       </div>
 
       <div class="inv-card reveal reveal-delay-3">
@@ -1427,7 +1534,7 @@
         </div>
         <div class="inv-tag" style="background:rgba(34,197,94,0.15);color:var(--green-light);">Challenge 3</div>
         <h3 class="inv-title">The Black Box Problem</h3>
-        <p class="inv-desc">Existing AI agents are opaque pipelines — you submit a question and wait. There's no way to inspect the plan, validate intermediate steps, or understand why a result is wrong. Sequential execution makes it slow and untrustworthy.</p>
+        <p class="inv-desc">AI agents are opaque: no plan inspection, no step validation. Sequential execution is slow and untrustworthy. You can't understand why results are wrong.</p>
       </div>
 
     </div>
@@ -1439,10 +1546,7 @@
   <div class="section-inner">
     <div class="section-label reveal">Full Demonstration</div>
     <h2 class="section-title reveal reveal-delay-1">One question. All your data.<br>Three professional outputs.</h2>
-    <p class="section-sub reveal reveal-delay-2">
-      Watch DeepEye transform a single natural-language question into an interactive dashboard,
-      a structured analytical report, and a professionally narrated data video — all in seconds.
-    </p>
+    <p class="section-sub reveal reveal-delay-2">One question transforms into dashboard, report, and video — all in seconds.</p>
     <div class="video-placeholder reveal reveal-delay-3" onclick="this.style.borderColor='var(--blue)'" style="position:relative;overflow:hidden;padding:0;border:1px solid rgba(59,130,246,0.2);">
       <img src="overview_cover.png" alt="DeepEye Full Demo" style="width:100%;display:block;opacity:0.85;border-radius:inherit;" />
       <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:rgba(6,13,26,0.3);">
@@ -1454,14 +1558,43 @@
   </div>
 </section>
 
-<!-- OUTPUT 1: DASHBOARD -->
-<section id="output1" class="output-section">
-  <div class="output-header reveal">
-    <div class="output-counter">OUTPUT 1 OF 3</div>
-    <div class="output-counter-line"></div>
+<!-- OUTPUT 1: REPORT -->
+<section id="output1" class="output-section-new">
+  <div class="output-header-new reveal">
+    <h2 class="output-title-new">Analytical Report</h2>
   </div>
-  <div class="output-body">
-    <div class="output-left">
+  <div class="output-body-new">
+    <div class="output-left-new">
+      <img src="tab_report.png" alt="Analytical Report" />
+      <div class="output-play-overlay">
+        <div class="output-play-btn">&#9654;</div>
+        <div class="output-play-label">Analytical Report Demo</div>
+        <div class="output-duration">~35s</div>
+      </div>
+    </div>
+    <div class="output-right-new">
+      <p class="output-tagline-new reveal reveal-delay-1">Executive summary, trend analysis, key findings.<br>Written intelligence — not just formatted data.</p>
+      <ul class="output-list-new reveal reveal-delay-2">
+        <li><span class="ohl blue">&#10003;</span> Executive summary and key findings auto-written and structured</li>
+        <li><span class="ohl blue">&#10003;</span> Charts and insights connected to system conclusions</li>
+        <li><span class="ohl blue">&#10003;</span> Draws on databases and documents simultaneously</li>
+      </ul>
+      <div class="output-tags-new reveal reveal-delay-2">
+        <span class="otag blue">Auto-written</span>
+        <span class="otag blue">Multi-source</span>
+        <span class="otag blue">Export-ready</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTPUT 2: DASHBOARD -->
+<section id="output2" class="output-section-new">
+  <div class="output-header-new reveal">
+    <h2 class="output-title-new">Interactive Dashboard</h2>
+  </div>
+  <div class="output-body-new">
+    <div class="output-left-new">
       <img src="tab_dashboard.png" alt="Interactive Dashboard" />
       <div class="output-play-overlay">
         <div class="output-play-btn">&#9654;</div>
@@ -1469,16 +1602,14 @@
         <div class="output-duration">~40s</div>
       </div>
     </div>
-    <div class="output-right">
-      <h2 class="output-title reveal reveal-delay-1"><span class="output-icon">&#128202;</span> Interactive<br>Dashboard</h2>
-      <p class="output-tagline reveal reveal-delay-2">Filter, drill down, explore live.<br>No analyst standing between you and your data.</p>
-      <ul class="output-list reveal reveal-delay-3">
-        <li><span class="ohl blue">&#10003;</span> Filter by region, time range, or category — all charts update in real time, instantly</li>
-        <li><span class="ohl blue">&#10003;</span> Trend lines, regional bars, global distribution maps — all auto-generated</li>
-        <li><span class="ohl blue">&#10003;</span> Hover tooltips reveal the exact numbers behind every visual</li>
-        <li><span class="ohl blue">&#10003;</span> Drill down from summary to individual data points with one click</li>
+    <div class="output-right-new">
+      <p class="output-tagline-new reveal reveal-delay-1">Filter, drill down, explore live.<br>No analyst standing between you and your data.</p>
+      <ul class="output-list-new reveal reveal-delay-2">
+        <li><span class="ohl blue">&#10003;</span> Real-time filters update all charts instantly</li>
+        <li><span class="ohl blue">&#10003;</span> Auto-generated trend lines, maps, and visualizations</li>
+        <li><span class="ohl blue">&#10003;</span> Drill down from summary to individual data points instantly</li>
       </ul>
-      <div class="output-tags reveal reveal-delay-3">
+      <div class="output-tags-new reveal reveal-delay-2">
         <span class="otag blue">Zero code</span>
         <span class="otag blue">Live data</span>
         <span class="otag blue">Real-time filters</span>
@@ -1487,67 +1618,31 @@
   </div>
 </section>
 
-<!-- OUTPUT 2: REPORT -->
-<section id="output2" class="output-section">
-  <div class="output-header reveal">
-    <div class="output-counter green">OUTPUT 2 OF 3</div>
-    <div class="output-counter-line green"></div>
-  </div>
-  <div class="output-body">
-    <div class="output-left">
-      <img src="tab_report.png" alt="Analytical Report" />
-      <div class="output-play-overlay">
-        <div class="output-play-btn green">&#9654;</div>
-        <div class="output-play-label">Analytical Report Demo</div>
-        <div class="output-duration">~35s</div>
-      </div>
-    </div>
-    <div class="output-right">
-      <h2 class="output-title reveal reveal-delay-1"><span class="output-icon">&#128196;</span> Analytical<br>Report</h2>
-      <p class="output-tagline reveal reveal-delay-2">Executive summary, trend analysis, key findings.<br>Written intelligence — not just formatted data.</p>
-      <ul class="output-list reveal reveal-delay-3">
-        <li><span class="ohl green">&#10003;</span> Executive summary, trend sections, and key findings — all written and structured automatically</li>
-        <li><span class="ohl green">&#10003;</span> Charts and insight text appear side by side — connected to what the system concludes</li>
-        <li><span class="ohl green">&#10003;</span> Draws on both structured database queries and unstructured document knowledge simultaneously</li>
-        <li><span class="ohl green">&#10003;</span> Export-ready — shareable as a complete document the moment analysis finishes</li>
-      </ul>
-      <div class="output-tags reveal reveal-delay-3">
-        <span class="otag green">Auto-written</span>
-        <span class="otag green">Multi-source</span>
-        <span class="otag green">Export-ready</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- OUTPUT 3: DATA VIDEO -->
-<section id="output3" class="output-section">
-  <div class="output-header reveal">
-    <div class="output-counter purple">OUTPUT 3 OF 3</div>
-    <div class="output-counter-line purple"></div>
+<section id="output3" class="output-section-new">
+  <div class="output-header-new reveal">
+    <h2 class="output-title-new">Narrated Data Video</h2>
   </div>
-  <div class="output-body">
-    <div class="output-left">
+  <div class="output-body-new">
+    <div class="output-left-new">
       <img src="tab_video.png" alt="Data Video" />
       <div class="output-play-overlay">
-        <div class="output-play-btn purple">&#9654;</div>
+        <div class="output-play-btn">&#9654;</div>
         <div class="output-play-label">Data Video Demo</div>
         <div class="output-duration">~45s</div>
       </div>
     </div>
-    <div class="output-right">
-      <h2 class="output-title reveal reveal-delay-1"><span class="output-icon">&#127909;</span> Narrated<br>Data Video</h2>
-      <p class="output-tagline reveal reveal-delay-2">Charts animate. Narration explains. Anyone can understand.<br>Broadcast-quality, generated automatically.</p>
-      <ul class="output-list reveal reveal-delay-3">
-        <li><span class="ohl purple">&#10003;</span> Charts animate from zero — bars rise, lines trace, numbers count up in real time</li>
-        <li><span class="ohl purple">&#10003;</span> Auto-generated narration explains every chart beat by beat, in natural spoken language</li>
-        <li><span class="ohl purple">&#10003;</span> Synchronized subtitles appear frame-perfectly with the narration audio</li>
-        <li><span class="ohl purple">&#10003;</span> Professional broadcast-quality visual design — looks like a real news data segment</li>
+    <div class="output-right-new">
+      <p class="output-tagline-new reveal reveal-delay-1">Charts animate. Narration explains. Anyone can understand.<br>Broadcast-quality, generated automatically.</p>
+      <ul class="output-list-new reveal reveal-delay-2">
+        <li><span class="ohl blue">&#10003;</span> Charts animate in real time with auto-generated narration</li>
+        <li><span class="ohl blue">&#10003;</span> Synchronized subtitles frame-perfectly with audio</li>
+        <li><span class="ohl blue">&#10003;</span> Professional broadcast-quality visual design</li>
       </ul>
-      <div class="output-tags reveal reveal-delay-3">
-        <span class="otag purple">Auto-narrated</span>
-        <span class="otag purple">Animated charts</span>
-        <span class="otag purple">Broadcast quality</span>
+      <div class="output-tags-new reveal reveal-delay-2">
+        <span class="otag blue">Auto-narrated</span>
+        <span class="otag blue">Animated charts</span>
+        <span class="otag blue">Broadcast quality</span>
       </div>
     </div>
   </div>
@@ -1558,7 +1653,7 @@
   <div class="section-inner">
     <div class="section-label reveal">How It Works</div>
     <h2 class="section-title reveal reveal-delay-1">Type. Connect. Let DeepEye drive.</h2>
-    <p class="section-sub reveal reveal-delay-2">A database-inspired workflow engine — compiled, validated, and executed with full transparency. No black box.</p>
+    <p class="section-sub reveal reveal-delay-2">Compiled, validated, and executed with full transparency. No black box.</p>
     <div class="workflow-grid">
       <div class="dag-diagram reveal reveal-delay-2" style="padding:0;overflow:hidden;">
         <img src="how_it_works.png" alt="DeepEye Workflow Engine" style="width:100%;border-radius:12px;display:block;" />
@@ -1569,28 +1664,28 @@
           <div class="step-num">1</div>
           <div>
             <div class="step-title">Type your question</div>
-            <div class="step-desc">Use <code style="color:var(--blue-light)">@</code> to bind any data source — databases, PDF reports, or raw CSV files.</div>
+            <div class="step-desc">Bind any data source with <code style="color:var(--blue-light)">@</code> — databases, PDFs, or CSV files.</div>
           </div>
         </div>
         <div class="step-item reveal reveal-delay-2">
           <div class="step-num">2</div>
           <div>
             <div class="step-title">DeepEye plans the workflow</div>
-            <div class="step-desc">Decomposes your question into sub-tasks and builds a directed acyclic graph — parallel tasks identified and scheduled automatically.</div>
+            <div class="step-desc">Decomposes into sub-tasks, builds a DAG, and schedules parallel execution automatically.</div>
           </div>
         </div>
         <div class="step-item reveal reveal-delay-3">
           <div class="step-num">3</div>
           <div>
             <div class="step-title">Validated before it runs</div>
-            <div class="step-desc">Every node is compiled, validated, and optimized before execution. Errors are caught before they reach your data.</div>
+            <div class="step-desc">Every node compiled, validated, optimized. Errors caught before reaching your data.</div>
           </div>
         </div>
         <div class="step-item reveal reveal-delay-4">
           <div class="step-num">4</div>
           <div>
             <div class="step-title">Three outputs delivered</div>
-            <div class="step-desc">Dashboard, report, and narrated video — generated in parallel, ready the moment analysis completes.</div>
+            <div class="step-desc">Dashboard, report, and video generated in parallel. Ready instantly.</div>
           </div>
         </div>
         <div class="step-item reveal reveal-delay-5">
@@ -1610,10 +1705,7 @@
   <div class="section-inner">
     <div class="section-label reveal">Core Inventions</div>
     <h2 class="section-title reveal reveal-delay-1">Three inventions. One coherent system.</h2>
-    <p class="section-sub reveal reveal-delay-2">
-      Each innovation addresses a fundamental limitation of existing AI data tools — not incrementally,
-      but at a systems level. Together, they make DeepEye categorically different.
-    </p>
+    <p class="section-sub reveal reveal-delay-2">Each addresses a fundamental limitation — not incrementally, but at systems level.</p>
     <div class="innovations-grid">
 
       <div class="innovation-card inv1 reveal reveal-delay-1">
@@ -1622,7 +1714,7 @@
         </div>
         <div class="inv-num">Invention I</div>
         <div class="inv-title">Unified Multimodal Orchestration</div>
-        <p class="inv-desc">DeepEye is the first system to unify structured databases, unstructured documents, and raw data files into a single coherent analysis pipeline — no manual integration, no data silos.</p>
+        <p class="inv-desc">Unifies databases, documents, and data files into one coherent pipeline. No silos, no manual integration.</p>
         <div class="inv-tags">
           <span class="inv-tag">SQL + NL2SQL</span>
           <span class="inv-tag">RAG Documents</span>
@@ -1636,7 +1728,7 @@
         </div>
         <div class="inv-num">Invention II</div>
         <div class="inv-title">Hierarchical Reasoning with Context Isolation</div>
-        <p class="inv-desc">DeepEye decomposes every task into isolated sub-agents, each with its own focused context — so complexity no longer degrades accuracy, regardless of task size.</p>
+        <p class="inv-desc">Decomposes tasks into isolated sub-agents with focused context. Complexity no longer degrades accuracy.</p>
         <div class="inv-tags">
           <span class="inv-tag">Sub-agent Isolation</span>
           <span class="inv-tag">Context Boundary</span>
@@ -1650,7 +1742,7 @@
         </div>
         <div class="inv-num">Invention III</div>
         <div class="inv-title">Database-Inspired Workflow Engine</div>
-        <p class="inv-desc">DeepEye treats every workflow like a database query — compiled, validated, and executed with full auditability. Parallel tasks run simultaneously via Kahn's algorithm, cutting hours into seconds.</p>
+        <p class="inv-desc">Treats workflows like database queries: compiled, validated, auditable. Parallel execution cuts hours to seconds.</p>
         <div class="inv-tags">
           <span class="inv-tag">Compile + Validate</span>
           <span class="inv-tag">Parallel Execution</span>
@@ -1666,15 +1758,15 @@
 <section id="knowledge" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="section-inner">
     <div class="section-label reveal">Knowledge Base</div>
-    <h2 class="section-title reveal reveal-delay-1" style="font-size: 3.6rem;">DeepEye learns over time.</h2>
-    <p class="section-sub reveal reveal-delay-2" style="font-size: 1.2rem; margin-bottom: 28px;">Every document, schema, and completed workflow is stored and reused — the system gets smarter with every analysis.</p>
+    <h2 class="section-title reveal reveal-delay-1">DeepEye learns over time.</h2>
+    <p class="section-sub reveal reveal-delay-2">Every document, schema, and workflow is stored and reused — smarter with every analysis.</p>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;" class="reveal reveal-delay-3">
       <div class="feature-card kb-card">
         <div class="kb-img-wrap"><img src="images/kb_document_memory.png" alt="Document Memory" class="kb-img"></div>
         <div class="kb-body">
           <span class="feature-emoji">&#128196;</span>
           <div class="feature-title">Document Memory</div>
-          <div class="feature-desc">PDF reports and domain documents are indexed and automatically retrieved when relevant to any new question.</div>
+          <div class="feature-desc">PDFs and domain documents indexed and auto-retrieved for relevant questions.</div>
         </div>
       </div>
       <div class="feature-card kb-card">
@@ -1682,7 +1774,7 @@
         <div class="kb-body">
           <span class="feature-emoji">&#128204;</span>
           <div class="feature-title">Schema Context</div>
-          <div class="feature-desc">Table names, field descriptions, and business definitions stored as metadata — DeepEye always knows what your data means.</div>
+          <div class="feature-desc">Table names, field descriptions, and business definitions stored. DeepEye always knows your data.</div>
         </div>
       </div>
       <div class="feature-card kb-card">
@@ -1690,7 +1782,7 @@
         <div class="kb-body">
           <span class="feature-emoji">&#9851;</span>
           <div class="feature-title">Reusable Templates</div>
-          <div class="feature-desc">Successful workflows are saved as templates — one click re-runs any proven analysis instantly.</div>
+          <div class="feature-desc">Successful workflows saved as templates. One click re-runs instantly.</div>
         </div>
       </div>
     </div>
@@ -1702,7 +1794,7 @@
   <div class="section-inner">
     <div class="section-label reveal">Production Ready</div>
     <h2 class="section-title reveal reveal-delay-1">Built for real organizations — not just demos.</h2>
-    <p class="section-sub reveal reveal-delay-2">Enterprise-grade security, scalability, and auditability — all out of the box.</p>
+    <p class="section-sub reveal reveal-delay-2">Enterprise-grade security, scalability, and auditability built-in.</p>
     <div class="features-grid">
       <div class="feature-card reveal reveal-delay-1">
         <span class="feature-emoji">&#128051;</span>
@@ -1744,25 +1836,25 @@
     <div class="section-label reveal">Recognition</div>
     <h2 class="section-title reveal reveal-delay-1">Independently verified.</h2>
     <p class="section-sub reveal reveal-delay-2" style="margin: 0 auto 32px;">
-      DeepEye's innovations are not just our claim — they are recognized by the research community and protected by intellectual property law.
+      Innovations recognized by research community and protected by law.
     </p>
     <div class="recognition-grid reveal reveal-delay-3">
       <div class="recognition-card rec-award">
-        <img src="recognition_award.png" alt="Award" class="rec-icon-img" />
+        <img src="assets/award_photo.png" alt="AI Agent 2025 Best Open Source Project Award" class="rec-icon-img" />
         <div class="rec-label">Competition Award</div>
-        <div class="rec-title">Best Project Award</div>
-        <div class="rec-sub">[AI Agent Competition Name]<br>[Year]</div>
+        <div class="rec-title">Best Open Source Project</div>
+        <div class="rec-sub">AI Agent 2025<br>Best Project Award</div>
       </div>
       <div class="recognition-card rec-patent">
-        <img src="recognition_patent.png" alt="Patent" class="rec-icon-img" />
+        <img src="assets/patent1-01.png" alt="Patent CN202010477079" class="rec-icon-img" />
         <div class="rec-label">Intellectual Property</div>
-        <div class="rec-title">Patent Granted</div>
-        <div class="rec-sub">[Patent Title or Number]<br>Patent Office</div>
+        <div class="rec-title">5 Patents Granted</div>
+        <div class="rec-sub">China National Intellectual Property Administration<br>Autonomous Data Analysis Method & System</div>
       </div>
       <div class="recognition-card rec-sigmod">
-        <img src="recognition_sigmod.png" alt="SIGMOD" class="rec-icon-img" />
+        <img src="assets/paper_first_page-1.png" alt="DeepEye Demo Paper" class="rec-icon-img" />
         <div class="rec-label">Academic Publication</div>
-        <div class="rec-title">SIGMOD Demo Paper</div>
+        <div class="rec-title">DeepEye Demo Paper</div>
         <div class="rec-sub">Accepted at ACM SIGMOD 2025<br>Premier International Conference on Data Management</div>
       </div>
     </div>
@@ -1775,7 +1867,7 @@
     <div class="section-label reveal">Research Paper</div>
     <h2 class="section-title reveal reveal-delay-1">The science behind DeepEye.</h2>
     <p class="section-sub reveal reveal-delay-2">
-      Every design decision in DeepEye is grounded in peer-reviewed research. The full technical paper is available for download.
+      Every design decision grounded in peer-reviewed research. Full paper available for download.
     </p>
     <div class="paper-card reveal reveal-delay-3">
       <div>
