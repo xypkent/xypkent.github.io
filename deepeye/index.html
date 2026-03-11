@@ -271,6 +271,16 @@
       50% { opacity: 0.5; transform: scale(0.8); }
     }
 
+    .hero-product-name {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5vw, 5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 4px;
+      line-height: 1;
+    }
+
     .hero-title {
       font-family: var(--font-display);
       font-size: clamp(2.4rem, 4.5vw, 4.2rem);
@@ -1119,6 +1129,17 @@
       border-color: rgba(255,255,255,0.15);
     }
 
+    .rec-img-box {
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      border-radius: 8px 8px 0 0;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .rec-icon {
       font-size: 48px;
       display: block;
@@ -1161,6 +1182,70 @@
     .rec-award .rec-title { color: #facc15; }
     .rec-patent .rec-title { color: var(--blue-light); }
     .rec-sigmod .rec-title { color: var(--green-light); }
+
+    /* Recognition Row Layout */
+    .rec-row {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .rec-row-label {
+      display: flex;
+      align-items: center;
+    }
+    .rec-row-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .rec-row-content {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .rec-doc-card {
+      flex: 0 0 auto;
+      width: 160px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .rec-doc-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .rec-doc-img-wrap {
+      width: 100%;
+      background: #fff;
+      overflow: hidden;
+    }
+    .rec-doc-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .rec-doc-info {
+      padding: 10px 12px;
+    }
+    .rec-doc-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .rec-doc-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
 
     /* =====================
        PAPER & TEAM
@@ -1434,13 +1519,14 @@
       <span class="dot"></span>
       Geneva International Invention Exhibition 2026
     </div>
+    <div class="hero-product-name">DeepEye</div>
     <h1 class="hero-title">
       <span class="gradient-text">Steerable Self-Driving</span><br>
       Data Intelligence
     </h1>
     <p class="hero-tagline">
-      DeepEye is the first data agent that connects all your data sources,
-      plans the entire analysis, and delivers professional results — automatically.
+      A data intelligence agent system. One question, connect your data sources,
+      and DeepEye automatically turns that into professional results.
     </p>
 
     <div class="hero-ctas">
@@ -1458,8 +1544,8 @@
 <section id="market-reality" style="background:var(--bg-card);">
   <div class="section-inner">
     <div class="section-label reveal">The Market Reality</div>
-    <h2 class="section-title reveal reveal-delay-1">The numbers don't lie.</h2>
-    <p class="section-sub reveal reveal-delay-2">The demand for trustworthy, unified AI data intelligence isn't a trend — it's a regulatory imperative and a trillion-dollar market reality.</p>
+    <h2 class="section-title reveal reveal-delay-1">Data is everywhere. Tools still treat it separately.</h2>
+    <p class="section-sub reveal reveal-delay-2">In real organizations, data lives in databases, Excel files, and internal systems — but most tools still treat these sources separately. People want AI that is not just powerful, but trustworthy, transparent, and auditable.</p>
 
     <div class="innovations-grid" style="margin-top:28px;">
 
@@ -1504,9 +1590,9 @@
 <section id="motivation">
   <div class="section-inner">
     <div class="section-label reveal">Why DeepEye</div>
-    <h2 class="section-title reveal reveal-delay-1">Existing tools weren't built for this.</h2>
+    <h2 class="section-title reveal reveal-delay-1">Existing tools were not designed for real data work.</h2>
     <p class="section-sub reveal reveal-delay-2">
-      Every data analyst knows the pain. Today's AI tools force you to choose — query the database <em>or</em> read the report, but never both at once. DeepEye was built to eliminate these three fundamental limitations.
+      There are three big problems. Data is fragmented across formats. Complex tasks overwhelm single-agent systems. And many AI systems are still black boxes — users cannot clearly see or control the process.
     </p>
     <div class="innovations-grid" style="margin-top: 28px;">
 
@@ -1545,15 +1631,10 @@
 <section id="overview">
   <div class="section-inner">
     <div class="section-label reveal">Full Demonstration</div>
-    <h2 class="section-title reveal reveal-delay-1">One question. All your data.<br>Three professional outputs.</h2>
-    <p class="section-sub reveal reveal-delay-2">One question transforms into dashboard, report, and video — all in seconds.</p>
-    <div class="video-placeholder reveal reveal-delay-3" onclick="this.style.borderColor='var(--blue)'" style="position:relative;overflow:hidden;padding:0;border:1px solid rgba(59,130,246,0.2);">
+    <h2 class="section-title reveal reveal-delay-1">One question. Three professional outputs.</h2>
+    <p class="section-sub reveal reveal-delay-2">See how one question becomes a complete workflow — and turns into three professional outputs automatically.</p>
+    <div class="video-placeholder reveal reveal-delay-3" style="position:relative;overflow:hidden;padding:0;border:1px solid rgba(59,130,246,0.2);">
       <img src="overview_cover.png" alt="DeepEye Full Demo" style="width:100%;display:block;opacity:0.85;border-radius:inherit;" />
-      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:rgba(6,13,26,0.3);">
-        <div class="play-btn">&#9654;</div>
-        <div class="video-label">DeepEye — Full Product Demo (~2 min)</div>
-      </div>
-      <div class="video-duration">2:00</div>
     </div>
   </div>
 </section>
@@ -1573,11 +1654,11 @@
       </div>
     </div>
     <div class="output-right-new">
-      <p class="output-tagline-new reveal reveal-delay-1">Executive summary, trend analysis, key findings.<br>Written intelligence — not just formatted data.</p>
+      <p class="output-tagline-new reveal reveal-delay-1">Executive summary, key findings, and trend analysis.<br>Not just formatted data — real written intelligence.</p>
       <ul class="output-list-new reveal reveal-delay-2">
         <li><span class="ohl blue">&#10003;</span> Executive summary and key findings auto-written and structured</li>
         <li><span class="ohl blue">&#10003;</span> Charts and insights connected to system conclusions</li>
-        <li><span class="ohl blue">&#10003;</span> Draws on databases and documents simultaneously</li>
+        <li><span class="ohl blue">&#10003;</span> Draws on databases, Excel files, and JSON sources simultaneously</li>
       </ul>
       <div class="output-tags-new reveal reveal-delay-2">
         <span class="otag blue">Auto-written</span>
@@ -1603,7 +1684,7 @@
       </div>
     </div>
     <div class="output-right-new">
-      <p class="output-tagline-new reveal reveal-delay-1">Filter, drill down, explore live.<br>No analyst standing between you and your data.</p>
+      <p class="output-tagline-new reveal reveal-delay-1">Filter, drill down, and explore the data directly.<br>No analyst needed — DeepEye generates it automatically.</p>
       <ul class="output-list-new reveal reveal-delay-2">
         <li><span class="ohl blue">&#10003;</span> Real-time filters update all charts instantly</li>
         <li><span class="ohl blue">&#10003;</span> Auto-generated trend lines, maps, and visualizations</li>
@@ -1633,7 +1714,7 @@
       </div>
     </div>
     <div class="output-right-new">
-      <p class="output-tagline-new reveal reveal-delay-1">Charts animate. Narration explains. Anyone can understand.<br>Broadcast-quality, generated automatically.</p>
+      <p class="output-tagline-new reveal reveal-delay-1">Animated charts, narration, and subtitles — automatically.<br>One of our most distinctive features. Insights become easy to share.</p>
       <ul class="output-list-new reveal reveal-delay-2">
         <li><span class="ohl blue">&#10003;</span> Charts animate in real time with auto-generated narration</li>
         <li><span class="ohl blue">&#10003;</span> Synchronized subtitles frame-perfectly with audio</li>
@@ -1652,8 +1733,8 @@
 <section id="workflow">
   <div class="section-inner">
     <div class="section-label reveal">How It Works</div>
-    <h2 class="section-title reveal reveal-delay-1">Type. Connect. Let DeepEye drive.</h2>
-    <p class="section-sub reveal reveal-delay-2">Compiled, validated, and executed with full transparency. No black box.</p>
+    <h2 class="section-title reveal reveal-delay-1">Simple for the user. Structured underneath.</h2>
+    <p class="section-sub reveal reveal-delay-2">The user types a question and connects data sources. DeepEye plans, validates, and executes — transparently, step by step.</p>
     <div class="workflow-grid">
       <div class="dag-diagram reveal reveal-delay-2" style="padding:0;overflow:hidden;">
         <img src="how_it_works.png" alt="DeepEye Workflow Engine" style="width:100%;border-radius:12px;display:block;" />
@@ -1664,7 +1745,7 @@
           <div class="step-num">1</div>
           <div>
             <div class="step-title">Type your question</div>
-            <div class="step-desc">Bind any data source with <code style="color:var(--blue-light)">@</code> — databases, PDFs, or CSV files.</div>
+            <div class="step-desc">Bind any data source with <code style="color:var(--blue-light)">@</code> — databases, Excel files, or JSON data.</div>
           </div>
         </div>
         <div class="step-item reveal reveal-delay-2">
@@ -1705,7 +1786,7 @@
   <div class="section-inner">
     <div class="section-label reveal">Core Inventions</div>
     <h2 class="section-title reveal reveal-delay-1">Three inventions. One coherent system.</h2>
-    <p class="section-sub reveal reveal-delay-2">Each addresses a fundamental limitation — not incrementally, but at systems level.</p>
+    <p class="section-sub reveal reveal-delay-2">Together, these three ideas form one coherent system — each addressing a fundamental limitation at the systems level.</p>
     <div class="innovations-grid">
 
       <div class="innovation-card inv1 reveal reveal-delay-1">
@@ -1714,10 +1795,10 @@
         </div>
         <div class="inv-num">Invention I</div>
         <div class="inv-title">Unified Multimodal Orchestration</div>
-        <p class="inv-desc">Unifies databases, documents, and data files into one coherent pipeline. No silos, no manual integration.</p>
+        <p class="inv-desc">Unifies databases, Excel files, and JSON sources into one coherent pipeline. No silos, no manual integration.</p>
         <div class="inv-tags">
           <span class="inv-tag">SQL + NL2SQL</span>
-          <span class="inv-tag">RAG Documents</span>
+          <span class="inv-tag">Excel / JSON</span>
           <span class="inv-tag">Multi-source Join</span>
         </div>
       </div>
@@ -1758,15 +1839,15 @@
 <section id="knowledge" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="section-inner">
     <div class="section-label reveal">Knowledge Base</div>
-    <h2 class="section-title reveal reveal-delay-1">DeepEye learns over time.</h2>
-    <p class="section-sub reveal reveal-delay-2">Every document, schema, and workflow is stored and reused — smarter with every analysis.</p>
+    <h2 class="section-title reveal reveal-delay-1">DeepEye improves over time.</h2>
+    <p class="section-sub reveal reveal-delay-2">It stores schema knowledge and successful workflows — reusing experience, retrieving the right context, and becoming smarter with continued use.</p>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;" class="reveal reveal-delay-3">
       <div class="feature-card kb-card">
         <div class="kb-img-wrap"><img src="images/kb_document_memory.png" alt="Document Memory" class="kb-img"></div>
         <div class="kb-body">
           <span class="feature-emoji">&#128196;</span>
-          <div class="feature-title">Document Memory</div>
-          <div class="feature-desc">PDFs and domain documents indexed and auto-retrieved for relevant questions.</div>
+          <div class="feature-title">Data Memory</div>
+          <div class="feature-desc">Table schemas, field definitions, and business metadata indexed and auto-retrieved for relevant questions.</div>
         </div>
       </div>
       <div class="feature-card kb-card">
@@ -1793,8 +1874,8 @@
 <section id="production">
   <div class="section-inner">
     <div class="section-label reveal">Production Ready</div>
-    <h2 class="section-title reveal reveal-delay-1">Built for real organizations — not just demos.</h2>
-    <p class="section-sub reveal reveal-delay-2">Enterprise-grade security, scalability, and auditability built-in.</p>
+    <h2 class="section-title reveal reveal-delay-1">Not just a demo — built for real deployment.</h2>
+    <p class="section-sub reveal reveal-delay-2">We are not only thinking about intelligence. We are also thinking about security, control, and enterprise use.</p>
     <div class="features-grid">
       <div class="feature-card reveal reveal-delay-1">
         <span class="feature-emoji">&#128051;</span>
@@ -1819,7 +1900,7 @@
       <div class="feature-card reveal reveal-delay-5">
         <span class="feature-emoji">&#127760;</span>
         <div class="feature-title">Unified Multi-Source Integration</div>
-        <div class="feature-desc">Connect PostgreSQL, MySQL, CSV, PDF, and REST APIs in one session — no custom connectors needed.</div>
+        <div class="feature-desc">Connect PostgreSQL, MySQL, Excel, JSON, and REST APIs in one session — no custom connectors needed.</div>
       </div>
       <div class="feature-card reveal reveal-delay-6">
         <span class="feature-emoji">&#128203;</span>
@@ -1832,73 +1913,97 @@
 
 <!-- RECOGNITION -->
 <section id="recognition">
-  <div class="section-inner" style="text-align: center;">
+  <div class="section-inner" style="text-align:center;">
     <div class="section-label reveal">Recognition</div>
-    <h2 class="section-title reveal reveal-delay-1">Independently verified.</h2>
+    <h2 class="section-title reveal reveal-delay-1">Researched, protected, and validated.</h2>
     <p class="section-sub reveal reveal-delay-2" style="margin: 0 auto 32px;">
-      Innovations recognized by research community and protected by law.
+      DeepEye has received strong external recognition — through awards, patents, and academic publication.
     </p>
     <div class="recognition-grid reveal reveal-delay-3">
+
+      <!-- Card 1: Award -->
       <div class="recognition-card rec-award">
-        <img src="assets/award_photo.png" alt="AI Agent 2025 Best Open Source Project Award" class="rec-icon-img" />
+        <div class="rec-img-box">
+          <img src="assets/award_photo.png" alt="AI Agent 2025 Best Open Source Project Award" style="width:100%;height:100%;object-fit:contain;padding:16px;box-sizing:border-box;" />
+        </div>
         <div class="rec-label">Competition Award</div>
         <div class="rec-title">Best Open Source Project</div>
         <div class="rec-sub">AI Agent 2025<br>Best Project Award</div>
       </div>
+
+      <!-- Card 2: Patents (stacked) -->
       <div class="recognition-card rec-patent">
-        <img src="assets/patent1-01.png" alt="Patent CN202010477079" class="rec-icon-img" />
+        <div class="rec-img-box" style="background:#0d1525;">
+          <img src="assets/recognition_patents_stack.png" alt="5 Patents Granted" style="width:100%;height:100%;object-fit:contain;padding:12px;box-sizing:border-box;" />
+        </div>
         <div class="rec-label">Intellectual Property</div>
         <div class="rec-title">5 Patents Granted</div>
-        <div class="rec-sub">China National Intellectual Property Administration<br>Autonomous Data Analysis Method & System</div>
+        <div class="rec-sub">China National Intellectual Property Administration<br>Autonomous Data Analysis Method &amp; System</div>
       </div>
+
+      <!-- Card 3: Paper (stacked pages) -->
       <div class="recognition-card rec-sigmod">
-        <img src="assets/paper_first_page-1.png" alt="DeepEye Demo Paper" class="rec-icon-img" />
+        <div class="rec-img-box" style="background:#1a1a2e;">
+          <img src="assets/recognition_paper_stack.png" alt="DeepEye Demo Paper" style="width:100%;height:100%;object-fit:contain;padding:12px;box-sizing:border-box;" />
+        </div>
         <div class="rec-label">Academic Publication</div>
         <div class="rec-title">DeepEye Demo Paper</div>
-        <div class="rec-sub">Accepted at ACM SIGMOD 2025<br>Premier International Conference on Data Management</div>
+        <div class="rec-sub">Accepted at ACM SIGMOD 2026<br>Top-tier International Conference on Data Management</div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- PAPER & TEAM -->
-<section id="paper">
-  <div class="section-inner">
-    <div class="section-label reveal">Research Paper</div>
-    <h2 class="section-title reveal reveal-delay-1">The science behind DeepEye.</h2>
-    <p class="section-sub reveal reveal-delay-2">
-      Every design decision grounded in peer-reviewed research. Full paper available for download.
-    </p>
-    <div class="paper-card reveal reveal-delay-3">
-      <div>
-        <span class="paper-tag">Research Paper</span>
-        <div class="paper-title">
-          DeepEye: Towards Automatic Data Visualization<br>with Steerable Self-Driving Data Intelligence
+
+
+<!-- END SCREEN -->
+<section id="endscreen" style="background: linear-gradient(160deg, #050d1a 0%, #0a1628 50%, #0d1f3c 100%); display:flex; align-items:center; justify-content:center; padding: 60px 80px;">
+  <div style="display:flex; align-items:center; justify-content:center; gap:80px; width:100%; max-width:1200px; flex-wrap:wrap;">
+
+    <!-- LEFT: Text Info -->
+    <div style="flex:1.2; min-width:320px; display:flex; flex-direction:column; justify-content:center;">
+      <!-- Logos -->
+      <div style="display:flex; align-items:center; gap:20px; margin-bottom:44px; flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <img src="logo.png" alt="DeepEye Logo" style="width:60px;height:60px;border-radius:14px;object-fit:cover;" />
+          <span style="font-size:2rem; font-weight:800; color:#fff; letter-spacing:-0.5px;">DeepEye</span>
         </div>
-        <div class="paper-authors" style="margin-bottom: 16px;">
-          Yupeng Xie &nbsp;&middot;&nbsp; Liboyan Li &nbsp;&middot;&nbsp; Sirong Lu &nbsp;&middot;&nbsp; et al.
-        </div>
-        <div class="paper-venue">The Hong Kong University of Science and Technology (Guangzhou)</div>
+        <div style="width:1px; height:44px; background:rgba(255,255,255,0.15);"></div>
+        <img src="assets/hkustgz_logo_transparent.png" alt="HKUST(GZ) Logo" style="height:44px; object-fit:contain; filter:brightness(0) invert(1) opacity(0.85);" />
       </div>
-      <a href="#" class="btn-download">
-        &#8659; Download PDF
-      </a>
+      <!-- Event Badge -->
+      <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.3); border-radius:999px; padding:6px 18px; font-size:0.82rem; font-weight:600; color:var(--blue-light); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:28px; width:fit-content;">
+        <span style="width:6px;height:6px;background:var(--blue);border-radius:50%;display:inline-block;"></span>
+        Geneva International Invention Exhibition 2026
+      </div>
+      <!-- Main Title -->
+      <div style="font-size:clamp(2.2rem,3.5vw,3.6rem); font-weight:800; color:#fff; line-height:1.15; letter-spacing:-0.02em; margin-bottom:20px;">
+        Steerable Self-Driving<br>
+        <span style="background:linear-gradient(135deg,#60a5fa,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Data Intelligence</span>
+      </div>
+      <!-- Subtitle -->
+      <div style="font-size:1.1rem; color:rgba(255,255,255,0.5); margin-bottom:40px; line-height:1.6;">
+        The Hong Kong University of Science and Technology (Guangzhou)
+      </div>
+
     </div>
+
+    <!-- RIGHT: QR Code -->
+    <div style="flex:0.8; min-width:260px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px;">
+      <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:24px; padding:28px; box-shadow:0 0 60px rgba(59,130,246,0.15);">
+        <div style="background:#fff; border-radius:12px; padding:12px; display:inline-block;">
+          <img src="assets/qrcode.png" alt="Scan to visit DeepEye" style="width:240px;height:240px;display:block;border-radius:4px;" />
+        </div>
+      </div>
+      <div style="font-size:1rem; color:rgba(255,255,255,0.5); letter-spacing:0.04em; text-align:center; line-height:1.6;">
+        Scan to explore online<br>
+        <span style="color:var(--blue-light); font-weight:600;">xypkent.github.io/deepeye</span>
+      </div>
+    </div>
+
   </div>
 </section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo" style="display:flex;align-items:center;justify-content:center;gap:10px;">
-    <img src="logo.png" alt="DeepEye Logo" style="width:40px;height:40px;border-radius:10px;object-fit:cover;" />
-    <span>DeepEye</span>
-  </div>
-  <div class="footer-tagline">Steerable Self-Driving Data Intelligence</div>
-  <div class="footer-affiliation">
-    <span>The Hong Kong University of Science and Technology (Guangzhou)</span><br>
-    <span style="color:var(--text-muted);font-size:0.8rem;">Geneva International Invention Exhibition 2026</span>
-  </div>
-</footer>
 
 <script>
   /* =====================
@@ -1987,8 +2092,7 @@
       'Knowledge Base',
       'Production Ready',
       'Recognition',
-      'Research Paper',
-      'Footer'
+      'End Screen'
     ];
 
     // Build nav dots
