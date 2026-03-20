@@ -16,6 +16,7 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 
 # 🔥 News
+- *2026.03*: &nbsp;🎉🎉 We are hosting the [KDD Cup 2026](https://dataagent.top/) (Data Agents for Complex Data Analysis Track)!
 - *2026.03*: &nbsp;🎉🎉 Our demo paper "DeepEye" has been accepted by SIGMOD 2026!
 - *2026.01*: &nbsp;🎉🎉 Our paper "VisJudge-Bench" has been accepted by ICLR 2026!
 - *2025.06*: &nbsp;🎉🎉 Our paper "ChartMark" has been accepted by IEEE VIS 2025!
