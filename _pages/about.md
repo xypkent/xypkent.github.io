@@ -16,11 +16,26 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 
 # 🔥 News
+- *2026.03*: &nbsp;🎉🎉 Our demo paper "DeepEye" has been accepted by SIGMOD 2026!
 - *2026.01*: &nbsp;🎉🎉 Our paper "VisJudge-Bench" has been accepted by ICLR 2026!
 - *2025.06*: &nbsp;🎉🎉 Our paper "ChartMark" has been accepted by IEEE VIS 2025!
 - *2024.06*: &nbsp;🎉🎉 Our paper "HAIChart" has been accepted by VLDB 2024!
 
-# 📝 Selected Publications 
+# 📝 Selected Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGMOD 2026</div><a href="/images/deepeye.png"><img src='images/deepeye.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DeepEye: A Steerable Self-driving Data Agent System](#)
+
+Boyan Li, Yiran Peng, **Yupeng Xie**, Sirong Lu, Yizhang Zhu, Xing Mu, Xinyu Liu, Yuyu Luo
+
+*ACM SIGMOD International Conference on Management of Data (Demo)*, 2026
+
+🏅 *Silver Medal, 51st Geneva International Exhibition of Inventions*
+🏆 *Best Open-source Project Award, AI Agent 2025 Competition*
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><a href="/images/abstract.png"><img src='images/abstract.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
@@ -100,6 +115,8 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 </div>
 
 # 🎖 Honors and Awards
+- **Silver Medal**, 51st Geneva International Exhibition of Inventions, *DeepEye Data Agent System*, 2026
+- **Silver Medal**, 51st Geneva International Exhibition of Inventions, *Low-Altitude Economy Ground-Air Collaborative Delivery Digital Twin Platform*, 2026
 - **First Place**, Greater Bay Area Seven Universities Joint Graduate Academic Poster Competition, 2025
 - **National Scholarship** (Top 2%)
 - **China Telecom Scholarship · Fly Young Award** (Top 1%)
