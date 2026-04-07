@@ -16,6 +16,7 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 
 # 🔥 News
+- *2026.04*: &nbsp;🎉🎉 Our paper "IGenBench" has been accepted by ACL 2026!
 - *2026.03*: &nbsp;🎉🎉 We are hosting the [KDD Cup 2026](https://dataagent.top/) (Data Agents for Complex Data Analysis Track)!
 - *2026.03*: &nbsp;🎉🎉 Our demo paper "DeepEye" has been accepted by SIGMOD 2026!
 - *2026.01*: &nbsp;🎉🎉 Our paper "VisJudge-Bench" has been accepted by ICLR 2026!
@@ -23,6 +24,21 @@ My research aims to develop intelligent systems that can autonomously interact w
 - *2024.06*: &nbsp;🎉🎉 Our paper "HAIChart" has been accepted by VLDB 2024!
 
 # 📝 Selected Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><a href="/images/IGENBENCH.png"><img src='images/IGENBENCH.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+[IGenBench: Benchmarking the Reliability of Text-to-Infographic Generation](https://igen-bench.vercel.app/)
+
+Yinghao Tang, Xueding Liu, Boyuan Zhang, Tingfeng Lan, **Yupeng Xie**, Jiale Lao, Yiyao Wang, Haoxuan Li, Tingting Gao, Bo Pan, Luoxuan Weng, Xiuqi Huang, Minfeng Zhu, Yingchaojie Feng, Yuyu Luo, Wei Chen
+
+*Annual Meeting of the Association for Computational Linguistics (ACL)*, 2026
+
+[**Project**](https://igen-bench.vercel.app/)
+- IGenBench is the first benchmark for evaluating reliability in text-to-infographic generation.
+- It contains 600 curated test cases across 30 infographic types with automated reliability verification.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGMOD 2026</div><a href="/images/deepeye.png"><img src='images/deepeye.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
@@ -33,8 +49,8 @@ Boyan Li, Yiran Peng, **Yupeng Xie**, Sirong Lu, Yizhang Zhu, Xing Mu, Xinyu Liu
 
 *ACM SIGMOD International Conference on Management of Data (Demo)*, 2026
 
-🏅 *Silver Medal, 51st Geneva International Exhibition of Inventions*
-🏆 *Best Open-source Project Award, AI Agent 2025 Competition*
+- 🏅 *Silver Medal, 51st Geneva International Exhibition of Inventions*
+- 🏆 *Best Open-source Project Award, AI Agent 2025 Competition*
 </div>
 </div>
 
