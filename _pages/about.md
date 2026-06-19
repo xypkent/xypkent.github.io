@@ -16,6 +16,7 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 
 # 🔥 News
+- *2026.06*: &nbsp;🎉🎉 Our demo paper "DataMagic" has been accepted by VLDB 2026!
 - *2026.04*: &nbsp;🎉🎉 Our paper "IGenBench" has been accepted by ACL 2026!
 - *2026.03*: &nbsp;🎉🎉 We are hosting the [KDD Cup 2026](https://dataagent.top/) (Data Agents for Complex Data Analysis Track)!
 - *2026.03*: &nbsp;🎉🎉 Our demo paper "DeepEye" has been accepted by SIGMOD 2026!
@@ -24,6 +25,22 @@ My research aims to develop intelligent systems that can autonomously interact w
 - *2024.06*: &nbsp;🎉🎉 Our paper "HAIChart" has been accepted by VLDB 2024!
 
 # 📝 Selected Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2026</div><a href="/images/datamagic.png"><img src='images/datamagic.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DataMagic: Transforming Tabular Data into Data Insight Video](https://datamagic-home.github.io/)
+
+**Yupeng Xie**, Chen Ma, Zhenyang Wang, Liangwei Wang, Jiayi Zhu, Chuxuan Zeng, Zhouan Shen, Boyan Li, Yuyu Luo
+
+*Proceedings of the VLDB Endowment (Demo)*, 2026
+
+[[**Project**]](https://datamagic-home.github.io/) [[**arXiv**]](https://arxiv.org/abs/2606.20388)
+- DataMagic is an end-to-end interactive system that transforms raw tabular data and natural language queries into narrative data-insight videos.
+- Introduces DVSpec, a declarative specification that binds visual and animation elements to underlying data fields, ensuring data fidelity and provenance.
+- Adopts a Generate-then-Orchestrate multi-agent architecture and supports three interaction modes with provenance-based data Q&A.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><a href="/images/IGENBENCH.png"><img src='images/IGENBENCH.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
