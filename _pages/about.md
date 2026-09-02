@@ -29,7 +29,7 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 # 📝 Selected Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2026</div><a href="/images/datamagic.png"><img src='images/datamagic.png' alt="DataMagic system overview" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2026</div><a href="/images/datamagic-vis-system-overview.png"><img src='images/datamagic-vis-system-overview.png' alt="DataMagic system overview" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 [DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration](https://datamagic-home.github.io/)
