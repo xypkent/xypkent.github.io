@@ -102,7 +102,7 @@ Yinghao Tang, **Yupeng Xie**, Yingchaojie Feng, Tingfeng Lan, Wei Chen
 
 *Annual Meeting of the Association for Computational Linguistics (System Demonstrations)*, 2026
 
-[[**Project**]](https://vividoc-homepage.vercel.app/) [[**arXiv**]](https://arxiv.org/abs/2603.01912)
+[[**Project**]](https://vividoc-homepage.vercel.app/) [[**arXiv**]](https://arxiv.org/abs/2603.27991)
 - ViviDoc helps users create interactive documents through a human-agent collaborative workflow.
 - Its editable DocSpec representation gives authors control over content structure and interactive behavior before implementation.
 </div>
