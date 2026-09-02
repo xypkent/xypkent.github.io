@@ -70,9 +70,11 @@ Boyan Li, Zhuowen Liang, **Yupeng Xie**, Xiaotian Lin, Tianqi Luo, Xinyu Liu, Yi
 
 *arXiv preprint arXiv:2608.03451*, 2026
 
-[[**arXiv**]](https://arxiv.org/abs/2608.03451)
-- DataSpace benchmarks data agents on verifiable analytical tasks over heterogeneous, real-world workspaces.
-- It evaluates both answer correctness and supporting evidence, enabling fine-grained auditing of agent behavior.
+[[**arXiv**]](https://arxiv.org/abs/2608.03451) [[**GitHub**]](https://github.com/HKUSTDial/DataSpace) [[**Dataset**]](https://huggingface.co/datasets/HKUSTDial/DataSpace)
+
+🏆 **Official Evaluation Benchmark for the KDD Cup 2026 Data Agents for Complex Data Analysis competition**
+- DataSpace contains 410 cross-language tasks and 7,439 artifacts totaling approximately 15 GB across CSV, JSON, SQLite, Markdown, PDF, and video.
+- It evaluates whether data agents can discover heterogeneous evidence and produce complete, verifiable tabular results.
 </div>
 </div>
 
