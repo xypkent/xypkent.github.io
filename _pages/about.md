@@ -16,8 +16,11 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 
 # 🔥 News
+- *2026.08*: &nbsp;🎉🎉 Our long paper "DataMagic" has been accepted by IEEE VIS 2026!
+- *2026.08*: &nbsp;🎉🎉 We released "DataSpace," a benchmark for verifiable data-agent analytics over heterogeneous workspaces!
 - *2026.06*: &nbsp;🎉🎉 Our demo paper "DataMagic" has been accepted by VLDB 2026!
 - *2026.04*: &nbsp;🎉🎉 Our paper "IGenBench" has been accepted by ACL 2026!
+- *2026.03*: &nbsp;🎉🎉 Our system demonstration "ViviDoc" has been accepted by ACL 2026!
 - *2026.03*: &nbsp;🎉🎉 We are hosting the [KDD Cup 2026](https://dataagent.top/) (Data Agents for Complex Data Analysis Track)!
 - *2026.03*: &nbsp;🎉🎉 Our demo paper "DeepEye" has been accepted by SIGMOD 2026!
 - *2026.01*: &nbsp;🎉🎉 Our paper "VisJudge-Bench" has been accepted by ICLR 2026!
@@ -25,6 +28,22 @@ My research aims to develop intelligent systems that can autonomously interact w
 - *2024.06*: &nbsp;🎉🎉 Our paper "HAIChart" has been accepted by VLDB 2024!
 
 # 📝 Selected Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2026</div><a href="/images/datamagic.png"><img src='images/datamagic.png' alt="DataMagic system overview" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DataMagic: Authoring Data Videos through Declarative Multi-Agent Orchestration](https://datamagic-home.github.io/)
+
+**Yupeng Xie**, Zhenyang Wang, Liangwei Wang, Jiayi Zhu, Zhouan Shen, Yuyu Luo
+
+*IEEE Visualization and Visual Analytics (VIS), Long Paper*, 2026
+
+[[**Project**]](https://datamagic-home.github.io/)
+- DataMagic is an end-to-end system for authoring data videos from raw tabular data.
+- It introduces DVSpec, a declarative specification for binding data, visual elements, and animation behavior.
+- Its Generate-then-Orchestrate multi-agent framework separates content generation from global narrative coordination.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2026</div><a href="/images/datamagic.png"><img src='images/datamagic.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
@@ -42,6 +61,21 @@ My research aims to develop intelligent systems that can autonomously interact w
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><a href="/images/dataspace.png"><img src='images/dataspace.png' alt="DataSpace benchmark overview" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces](https://arxiv.org/abs/2608.03451)
+
+Boyan Li, Zhuowen Liang, **Yupeng Xie**, Xiaotian Lin, Tianqi Luo, Xinyu Liu, Yizhang Zhu, Zhangyang Peng, Yuan Li, Zhengxuan Zhang, Jiayi Zhang, Nan Tang, Guoliang Li, Yuyu Luo
+
+*arXiv preprint arXiv:2608.03451*, 2026
+
+[[**arXiv**]](https://arxiv.org/abs/2608.03451)
+- DataSpace benchmarks data agents on verifiable analytical tasks over heterogeneous, real-world workspaces.
+- It evaluates both answer correctness and supporting evidence, enabling fine-grained auditing of agent behavior.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><a href="/images/IGENBENCH.png"><img src='images/IGENBENCH.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -54,6 +88,21 @@ Yinghao Tang, Xueding Liu, Boyuan Zhang, Tingfeng Lan, **Yupeng Xie**, Jiale Lao
 [**Project**](https://igen-bench.vercel.app/)
 - IGenBench is the first benchmark for evaluating reliability in text-to-infographic generation.
 - It contains 600 curated test cases across 30 infographic types with automated reliability verification.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026 Demo</div><a href="/images/vividoc.png"><img src='images/vividoc.png' alt="ViviDoc system overview" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Demonstrating ViviDoc: Generating Interactive Documents through Human-Agent Collaboration](https://vividoc-homepage.vercel.app/)
+
+Yinghao Tang, **Yupeng Xie**, Yingchaojie Feng, Tingfeng Lan, Wei Chen
+
+*Annual Meeting of the Association for Computational Linguistics (System Demonstrations)*, 2026
+
+[[**Project**]](https://vividoc-homepage.vercel.app/) [[**arXiv**]](https://arxiv.org/abs/2603.01912)
+- ViviDoc helps users create interactive documents through a human-agent collaborative workflow.
+- Its editable DocSpec representation gives authors control over content structure and interactive behavior before implementation.
 </div>
 </div>
 
@@ -158,6 +207,11 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 - Second Prize at National Level, First Prize at Provincial Level in **Lanqiao Cup National Programming Contest**
 - Second Prize in **National College Students' Mobile Internet Application Development Innovation Competition**
 - Second Prize at National Level, Grand Prize at Provincial Level in **National E-Business Innovation Competition**
+
+# 🤝 Academic Service
+- **Committee Chair (Publicity & Data)**, KDD Cup 2026: Data Agents for Complex Data Analysis
+- **Program Committee Member**, ADS 2026: The Joint Workshop on Agentic Data Systems and Data-Centric AI (co-located with VLDB 2026)
+- **Reviewer**, Conference on Neural Information Processing Systems (NeurIPS), 2026
 
 # 📖 Educations
 - *2025.03 - now*, PhD in Data Science and Analytics, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China.
