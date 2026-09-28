@@ -213,6 +213,7 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 # 🤝 Academic Service
 - **Committee Chair (Publicity & Data)**, KDD Cup 2026: Data Agents for Complex Data Analysis
 - **Program Committee Member**, ADS 2026: The Joint Workshop on Agentic Data Systems and Data-Centric AI (co-located with VLDB 2026)
+- **Reviewer**, International Conference on Learning Representations (ICLR), 2026
 - **Reviewer**, Conference on Neural Information Processing Systems (NeurIPS), 2026
 
 # 📖 Educations
