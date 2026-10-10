@@ -16,6 +16,7 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 
 # 🔥 News
+- *2026.10*: &nbsp;🎉🎉 We released "DataVista," a benchmark for diagnosing multimodal LLMs on data video understanding!
 - *2026.08*: &nbsp;🎉🎉 Our long paper "DataMagic" has been accepted by IEEE VIS 2026!
 - *2026.08*: &nbsp;🎉🎉 We released "DataSpace," a benchmark for verifiable data-agent analytics over heterogeneous workspaces!
 - *2026.06*: &nbsp;🎉🎉 Our demo paper "DataMagic" has been accepted by VLDB 2026!
@@ -29,6 +30,22 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 # 📝 Selected Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><a href="/images/datavista.png"><img src='images/datavista.png' alt="DataVista capability hierarchy and construction pipeline" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DataVista: Diagnosing Multimodal LLMs on Data Video Understanding](https://arxiv.org/abs/2610.11993)
+
+**Yupeng Xie**, Zhenyang Wang, Jiayi Zhu, Yinghao Tang, Zhouan Shen, Yiyu Chen, Yuyu Luo
+
+*arXiv preprint arXiv:2610.11993*, 2026
+
+[[**arXiv**]](https://arxiv.org/abs/2610.11993) [[**GitHub**]](https://github.com/HKUSTDial/DataVista)
+- DataVista is the first benchmark for evaluating multimodal LLMs on data video understanding.
+- It contains 961 real-world data videos and 6,775 questions under a three-level capability framework with 10 question types.
+- Evaluation of 19 MLLMs shows the best model still lags human experts, especially on causal reasoning and narrative structure.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE VIS 2026</div><a href="/images/datamagic-vis-system-overview.png"><img src='images/datamagic-vis-system-overview.png' alt="DataMagic system overview" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -38,7 +55,7 @@ My research aims to develop intelligent systems that can autonomously interact w
 
 *IEEE Visualization and Visual Analytics (VIS), Long Paper*, 2026
 
-[[**Project**]](https://datamagic-home.github.io/)
+[[**Project**]](https://datamagic-home.github.io/) [[**arXiv**]](https://arxiv.org/abs/2609.33403)
 - DataMagic is an end-to-end system for authoring data videos from raw tabular data.
 - It introduces DVSpec, a declarative specification for binding data, visual elements, and animation behavior.
 - Its Generate-then-Orchestrate multi-agent framework separates content generation from global narrative coordination.
@@ -214,7 +231,7 @@ Yuyu Luo, Xuedi Qin, **Yupeng Xie**, Guoliang Li
 - **Committee Chair (Publicity & Data)**, KDD Cup 2026: Data Agents for Complex Data Analysis
 - **Program Committee Member**, ADS 2026: The Joint Workshop on Agentic Data Systems and Data-Centric AI (co-located with VLDB 2026)
 - **Reviewer**, International Conference on Learning Representations (ICLR), 2026
-- **Reviewer**, Conference on Neural Information Processing Systems (NeurIPS), 2026
+- **Top Reviewer**, Conference on Neural Information Processing Systems (NeurIPS), 2026
 
 # 📖 Educations
 - *2025.03 - now*, PhD in Data Science and Analytics, Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China.
